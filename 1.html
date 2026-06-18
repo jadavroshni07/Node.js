@@ -1,3 +1,4 @@
+<!-- Display contain on browser after 5 sec -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,12 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+    <p id="p1"></p>
     <script>
-        const a={
-            "name":"abc",
-            "age":25
-        }
-        console.log(a)
+    setTimeout(function(){
+        document.getElementById("p1").innerHTML="LJU"
+    },5000)
     </script>
 </body>
 </html>
+

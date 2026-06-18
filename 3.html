@@ -1,24 +1,32 @@
-<!-- write one JSON string with date property and print date in 
-indian standard time while clicking on button -->
-<!-- same as a 1.js file question -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<!-- Write a Code to increse the font size at interval of 50 milisec and 
+ it should stop incresing when the font size reached to 50px
+ this task should be perform when you click on incese button on browser 
+ default font size (15px)-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+ </head>
+ <body>
+    <p id="p1">Roshni</p>
+    <button onclick="fun1()">Increse</button>
     <script>
-        function call()
+        let font=15;
+        function fun1(){
+            setInterval(function()
         {
-            obj=JSON.parse('{"name":"abc","dob":"1994-04-30"}');
-            obj=new Date(obj.dob);
-            document.getElementById("demo").innerHTML=obj;
-
+            if(font<100){
+                fun(font++)
+            }
+        },50)
+        };
+        function fun(size){
+            document.getElementById("p1").style.fontSize=size+"px"
         }
     </script>
-</head>
-<body>
-    <p id="demo"></p>
-    <button onclick="call()">click me</button>
-</body>
-</html>
+ </body>
+ </html>
+
+ 

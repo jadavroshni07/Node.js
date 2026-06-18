@@ -1,0 +1,5 @@
+M-mangoDB(T4)
+E-express(T2)[backend]
+R-react(T3)[frontend(html,css,bootstrap)]{component,dynamic-UI}
+N-nodeJS(T1)[backend](it's run JS file)
+JSON-java script object notetion(text format)
